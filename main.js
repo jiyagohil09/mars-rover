@@ -52,10 +52,10 @@ uploadrover();
 function down(){
   if(rover_y<=500){
     rover_y=rover_y+10;
-    console.log("when down arrow key id pressed"+rover_x+"y= "+rover_y);
-    uploadbackground(
-    uploadrover()
-    )
+    console.log("when down arrow key is pressed"+rover_x+"y= "+rover_y);
+    uploadbackground();
+    uploadrover();
+    
   }
 }
 function left(){
@@ -68,7 +68,7 @@ function left(){
 }
 function right(){
   if(rover_x <=800){
-    rover_x=rover_x=+10;
+    rover_x=rover_x+10;
     console.log("when right arrow key id pressed"+rover_x+"x= "+rover_y);
     uploadbackground();
     uploadrover();
